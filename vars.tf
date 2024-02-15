@@ -2,7 +2,7 @@ variable "parameters"{
 
   default = [
   { name = "ses.username" , type = "String" ,value = "AKIA4BRQSNV6YJ4ODV5R" },
-  { name = "dev.rds.username" , type = "String" ,value = "admin1" },
+  { name = "dev.backend.DB_Host" , type = "String" ,value = "admin1" },
 
 
 #Passwords
