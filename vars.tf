@@ -10,5 +10,4 @@ variable "parameters"{
 #Passwords
 { name = "dev.rds.password" , type = "SecureString" ,value = "ExpenseApp1234" }
   ]
-
 }
