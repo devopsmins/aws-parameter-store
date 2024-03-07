@@ -9,6 +9,7 @@ variable "parameters"{
 
 
 #Passwords
-{ name = "dev.rds.password" , type = "SecureString" ,value = "ExpenseApp1234" }
+{ name = "dev.rds.password" , type = "SecureString" ,value = "ExpenseApp1234" },
+    { name = "sonar.tekon" , type = "SecureString" ,value = "squ_46c27c38e5a04f2cf22e61f33a7464c2ac7fcfa8" }
   ]
 }
