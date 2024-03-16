@@ -7,6 +7,7 @@ variable "parameters"{
     { name = "dev.frontend.BACKEND_ENDPOINT" , type = "String" ,value = "http://backend-dev.devopsmins.online/" },
     { name = "dev.rds.endpoint" , type = "String" ,value = "dev-mysql-rds.cr60yyggs572.us-east-1.rds.amazonaws.com" },
     { name = "ssh.username" , type = "String" ,value = "root" } ,
+    { name = "artifactory.username" , type = "String" ,value = "admin" } ,
 
 
 #Passwords
