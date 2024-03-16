@@ -8,6 +8,7 @@ variable "parameters"{
     { name = "dev.rds.endpoint" , type = "String" ,value = "dev-mysql-rds.cr60yyggs572.us-east-1.rds.amazonaws.com" },
     { name = "ssh.username" , type = "String" ,value = "root" } ,
     { name = "artifactory.username" , type = "String" ,value = "admin" } ,
+    { name = "dev.backend.app_version" , type = "String" ,value = "1.0.0" } ,
 
 
 #Passwords
