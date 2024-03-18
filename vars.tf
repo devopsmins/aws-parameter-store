@@ -24,6 +24,7 @@ variable "parameters" {
 
 
 
+
     #Passwords
     "dev.rds.password" = { name = "dev.rds.password" , type = "SecureString" ,value = "ExpenseApp1234" },
     "prod.rds.password" = { name = "prod.rds.password" , type = "SecureString" ,value = "ExpenseApp1234" },
