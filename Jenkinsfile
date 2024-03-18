@@ -3,19 +3,20 @@ pipeline {
      node { label 'workstation' }
    }
 
-    options {
+  options {
     ansiColor('xterm')
-    }
+  }
 
 
 
-    stages {
+  stages {
 
-      stage( 'Apply' ) {
-        steps {
+    stage( 'Apply' ) {
+      steps {
         sh 'terraform init'
         sh 'terraform apply -auto-approve'
-         }
+
       }
     }
+  }
 }
