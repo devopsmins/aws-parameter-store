@@ -11,9 +11,11 @@ pipeline {
 
     stages {
 
-        stage( 'Apply' ) {
+      stage( 'Apply' ) {
+        steps {
         sh 'terraform init'
         sh 'terraform apply -auto-approve'
          }
+      }
     }
 }
