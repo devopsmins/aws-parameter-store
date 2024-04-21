@@ -1,6 +1,7 @@
 variable "parameters" {
 
   default ={
+    ##Expense project
     "dev.backend.app_version" = { name = "dev.backend.app_version" , type = "String" ,value = "1.0.0" } ,
     "dev.frontend.app_version" = { name = "dev.frontend.app_version" , type = "String" ,value = "1.0.0" } ,
     "dev.backend.DB_HOST" = { name = "dev.backend.DB_HOST" , type = "String" ,value = "dev-mysql-rds.cr60yyggs572.us-east-1.rds.amazonaws.com" },
@@ -10,6 +11,10 @@ variable "parameters" {
     "prod.frontend.app_version" = { name = "prod.frontend.app_version" , type = "String" ,value = "1.0.0" } ,
     "prod.backend.DB_HOST" = { name = "prod.backend.DB_HOST" , type = "String" ,value = "prod-mysql-rds.cr60yyggs572.us-east-1.rds.amazonaws.com" },
     "prod.frontend.BACKEND_ENDPOINT" = { name = "prod.frontend.BACKEND_ENDPOINT" , type = "String" ,value = "http://backend-prod.devopsmins.online/" },
+
+    ##Roboshop project
+    "dev.roboshop.rds.username" = { name = "dev.roboshop.rds.username" , type = "String" ,value = "admin1" },
+    "dev.roboshop.rds.password" = { name = "dev.roboshop.rds.password" , type = "SecureString" ,value = "Roboshop12345" },
 
 
     "ses.username" = { name = "ses.username" , type = "String" ,value = "AKIA4BRQSNV6YJ4ODV5R" },
