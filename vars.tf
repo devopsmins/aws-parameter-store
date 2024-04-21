@@ -15,6 +15,8 @@ variable "parameters" {
     ##Roboshop project
     "dev.roboshop.rds.username" = { name = "dev.roboshop.rds.username" , type = "String" ,value = "admin1" },
     "dev.roboshop.rds.password" = { name = "dev.roboshop.rds.password" , type = "SecureString" ,value = "Roboshop12345" },
+    "dev.roboshop.docdb.username" = { name = "dev.roboshop.docdb.username" , type = "String" ,value = "admin1" },
+    "dev.roboshop.docdb.password" = { name = "dev.roboshop.docdb.password" , type = "SecureString" ,value = "Roboshop12345" },
 
 
     "ses.username" = { name = "ses.username" , type = "String" ,value = "AKIA4BRQSNV6YJ4ODV5R" },
