@@ -18,6 +18,11 @@ variable "parameters" {
     "dev.roboshop.docdb.username" = { name = "dev.roboshop.docdb.username" , type = "String" ,value = "admin1" },
     "dev.roboshop.docdb.password" = { name = "dev.roboshop.docdb.password" , type = "SecureString" ,value = "Roboshop12345" },
 
+    "dev.roboshop.frontend.CATALOGUE_ENDPOINT" = { type = "String", value = "http://catalogue-dev.devopsmins.online/" },
+    "dev.roboshop.frontend.CART_ENDPOINT"      = { type = "String", value = "http://cart-dev.devopsmins.online/" },
+    "dev.roboshop.frontend.USER_ENDPOINT"      = { type = "String", value = "http://user-dev.devopsmins.online/" },
+    "dev.roboshop.frontend.SHIPPING_ENDPOINT"  = { type = "String", value = "http://shipping-dev.devopsmins.online/" },
+    "dev.roboshop.frontend.PAYMENT_ENDPOINT"   = { type = "String", value = "http://payment-dev.devopsmins.online/" },
 
     "ses.username" = { name = "ses.username" , type = "String" ,value = "AKIA4BRQSNV6YJ4ODV5R" },
     "ssh.username" = { name = "ssh.username" , type = "String" ,value = "root" } ,
