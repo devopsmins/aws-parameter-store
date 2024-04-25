@@ -36,6 +36,7 @@ variable "parameters" {
 
 
 
+
     #Passwords
     "dev.rds.password" = { name = "dev.rds.password" , type = "SecureString" ,value = "ExpenseApp1234" },
     "prod.rds.password" = { name = "prod.rds.password" , type = "SecureString" ,value = "ExpenseApp1234" },
@@ -43,5 +44,7 @@ variable "parameters" {
     "artifactory.password" = { name = "artifactory.password" , type = "SecureString" ,value = "Admin123" } ,
 
     "ssh.password" = { name = "ssh.password" , type = "SecureString" ,value = "DevOps321" },
+
+    "newrelic.key" = { type = "SecureString", value = "ad822c2f8cdc430ec33081aba9313743FFFFNRAL" },
   }
 }
