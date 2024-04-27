@@ -45,6 +45,6 @@ variable "parameters" {
 
     "ssh.password" = { name = "ssh.password" , type = "SecureString" ,value = "DevOps321" },
 
-    "newrelic.key" = { type = "SecureString", value = "ad822c2f8cdc430ec33081aba9313743FFFFNRAL" },
+    #"newrelic.key" = { type = "SecureString", value = "ad822c2f8cdc430ec33081aba9313743FFFFNRAL" },
   }
 }
