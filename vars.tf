@@ -24,6 +24,12 @@ variable "parameters" {
     "dev.roboshop.frontend.SHIPPING_ENDPOINT"  = { type = "String", value = "http://shipping-dev.devopsmins.online/" },
     "dev.roboshop.frontend.PAYMENT_ENDPOINT"   = { type = "String", value = "http://payment-dev.devopsmins.online/" },
 
+    "dev.roboshop.catalogue.MONGO_URL"      = { type = "SecureString", value = "mongodb://admin1:RoboShop12345@dev-roboshop-docdb.cluster-cmscnppwjzuf.us-east-1.docdb.amazonaws.com:27017/catalogue?tls=true&replicaSet=rs0&readPreference=secondaryPreferred&retryWrites=false" },
+    "dev.roboshop.catalogue.DOCDB_ENDPOINT" = { type = "String", value = "dev-roboshop-docdb.cluster-cmscnppwjzuf.us-east-1.docdb.amazonaws.com" },
+
+    "dev.roboshop.user.MONGO_URL"  = { type = "SecureString", value = "mongodb://admin1:RoboShop12345@dev-roboshop-docdb.cluster-cmscnppwjzuf.us-east-1.docdb.amazonaws.com:27017/users?tls=true&replicaSet=rs0&readPreference=secondaryPreferred&retryWrites=false" },
+    "dev.roboshop.user.REDIS_HOST" = { type = "String", value = "dev-roboshop-elasticache.ppugfs.0001.use1.cache.amazonaws.com" },
+
     "ses.username" = { name = "ses.username" , type = "String" ,value = "AKIA4BRQSNV6YJ4ODV5R" },
     "ssh.username" = { name = "ssh.username" , type = "String" ,value = "root" } ,
     "artifactory.username" = { name = "artifactory.username" , type = "String" ,value = "admin" } ,
@@ -45,6 +51,5 @@ variable "parameters" {
 
     "ssh.password" = { name = "ssh.password" , type = "SecureString" ,value = "DevOps321" },
 
-    #"newrelic.key" = { type = "SecureString", value = "ad822c2f8cdc430ec33081aba9313743FFFFNRAL" },
   }
 }
