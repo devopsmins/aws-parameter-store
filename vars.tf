@@ -34,8 +34,8 @@ variable "parameters" {
     "dev.roboshop.cart.CATALOGUE_PORT" = { type = "String", value = "80" },
     "dev.roboshop.cart.CATALOGUE_HOST" = { type = "String", value = "catalogue-dev.devopsmins.online" },
 
-    #"dev.roboshop.shipping.CART_ENDPOINT" = { type = "String", value = "cart-dev.devopsmins.online:80" },
-    #"dev.roboshop.shipping.DB_HOST"       = { type = "String", value = "dev-mysql-rds.cmscnppwjzuf.us-east-1.rds.amazonaws.com" },
+    "dev.roboshop.shipping.CART_ENDPOINT" = { type = "String", value = "cart-dev.devopsmins.online:80" },
+    "dev.roboshop.shipping.DB_HOST"       = { type = "String", value = "dev-mysql-rds.cmscnppwjzuf.us-east-1.rds.amazonaws.com" },
 
     #"dev.roboshop.payment.CART_HOST" = { type = "String", value = "cart-dev.devopsmins.online" },
     #"dev.roboshop.payment.CART_PORT" = { type = "String", value = "80" },
