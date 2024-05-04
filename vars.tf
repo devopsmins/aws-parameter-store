@@ -30,6 +30,33 @@ variable "parameters" {
     "dev.roboshop.user.MONGO_URL"  = { type = "SecureString", value = "mongodb://admin1:RoboShop12345@dev-roboshop-docdb.cluster-cmscnppwjzuf.us-east-1.docdb.amazonaws.com:27017/users?tls=true&replicaSet=rs0&readPreference=secondaryPreferred&retryWrites=false" },
     "dev.roboshop.user.REDIS_HOST" = { type = "String", value = "dev-roboshop-elasticache.ppugfs.0001.use1.cache.amazonaws.com" },
 
+    "dev.roboshop.cart.REDIS_HOST"     = { type = "String", value = "dev-roboshop-elasticache.ppugfs.0001.use1.cache.amazonaws.com" },
+    #"dev.roboshop.cart.CATALOGUE_PORT" = { type = "String", value = "80" },
+    #"dev.roboshop.cart.CATALOGUE_HOST" = { type = "String", value = "catalogue-dev.devopsmins.online" },
+
+    #"dev.roboshop.shipping.CART_ENDPOINT" = { type = "String", value = "cart-dev.devopsmins.online:80" },
+    #"dev.roboshop.shipping.DB_HOST"       = { type = "String", value = "dev-mysql-rds.cmscnppwjzuf.us-east-1.rds.amazonaws.com" },
+
+    #"dev.roboshop.payment.CART_HOST" = { type = "String", value = "cart-dev.devopsmins.online" },
+    #"dev.roboshop.payment.CART_PORT" = { type = "String", value = "80" },
+    #"dev.roboshop.payment.USER_HOST" = { type = "String", value = "user-dev.devopsmins.online" },
+    #"dev.roboshop.payment.USER_PORT" = { type = "String", value = "80" },
+    #"dev.roboshop.payment.AMQP_HOST" = { type = "String", value = "rabbitmq-dev.devopsmins.online" },
+    #"dev.roboshop.payment.AMQP_USER" = { type = "String", value = "roboshop" },
+    #"dev.roboshop.payment.AMQP_PASS" = { type = "SecureString", value = "roboshop123" },
+
+    #"dev.roboshop.dispatch.AMQP_HOST" = { type = "String", value = "rabbitmq-dev.devopsmins.online" },
+    #"dev.roboshop.dispatch.AMQP_USER" = { type = "String", value = "roboshop" },
+    #"dev.roboshop.dispatch.AMQP_PASS" = { type = "SecureString", value = "roboshop123" },
+
+    #"dev.roboshop.frontend.app_version"  = { type = "String", value = "1.0.2" },
+    #"dev.roboshop.cart.app_version"      = { type = "String", value = "1.0.0" },
+    #"dev.roboshop.catalogue.app_version" = { type = "String", value = "1.0.0" },
+    #"dev.roboshop.dispatch.app_version"  = { type = "String", value = "1.0.0" },
+    #"dev.roboshop.payment.app_version"   = { type = "String", value = "1.0.0" },
+    #"dev.roboshop.shipping.app_version"  = { type = "String", value = "1.0.1" },
+    #"dev.roboshop.user.app_version"      = { type = "String", value = "1.0.1" },
+
     "ses.username" = { name = "ses.username" , type = "String" ,value = "AKIA4BRQSNV6YJ4ODV5R" },
     "ssh.username" = { name = "ssh.username" , type = "String" ,value = "root" } ,
     "artifactory.username" = { name = "artifactory.username" , type = "String" ,value = "admin" } ,
