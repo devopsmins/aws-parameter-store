@@ -27,7 +27,7 @@ variable "parameters" {
     "dev.roboshop.catalogue.MONGO_URL"      = { type = "SecureString", value = "mongodb://admin1:RoboShop12345@dev-roboshop-docdb.cluster-cr60yyggs572.us-east-1.docdb.amazonaws.com:27017/catalogue?tls=true&replicaSet=rs0&readPreference=secondaryPreferred&retryWrites=false" },
     "dev.roboshop.catalogue.DOCDB_ENDPOINT" = { type = "String", value = "dev-roboshop-docdb.cluster-cr60yyggs572.us-east-1.docdb.amazonaws.com" },
 
-    "dev.roboshop.user.MONGO_URL"  = { type = "SecureString", value = "mongodb://admin1:RoboShop12345@dev-roboshop-docdb.cluster-cmscnppwjzuf.us-east-1.docdb.amazonaws.com:27017/users?tls=true&replicaSet=rs0&readPreference=secondaryPreferred&retryWrites=false" },
+    "dev.roboshop.user.MONGO_URL"  = { type = "SecureString", value = "mongodb://admin1:RoboShop12345@dev-roboshop-docdb.cluster-cr60yyggs572.us-east-1.docdb.amazonaws.com27017/users?tls=true&replicaSet=rs0&readPreference=secondaryPreferred&retryWrites=false" },
     "dev.roboshop.user.REDIS_HOST" = { type = "String", value = "dev-roboshop-elasticache.ppugfs.0001.use1.cache.amazonaws.com" },
 
     "dev.roboshop.cart.REDIS_HOST"     = { type = "String", value = "dev-roboshop-elasticache.ppugfs.0001.use1.cache.amazonaws.com" },
